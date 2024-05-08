@@ -1,0 +1,27 @@
+.pageDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+}
+
+.matCard {
+  width: 90vw;
+  height: 80vh;
+  background-color: rgba(38, 38, 38, 0.13);
+  color: white;
+}
+
+.highlight {
+  color: #ee6300;
+  font-weight: bold;
+}
+
+.textPage1 {
+  padding-left: 5vh;
+  padding-top: 2vh;
+  font-size: 3rem;
+}
+
+

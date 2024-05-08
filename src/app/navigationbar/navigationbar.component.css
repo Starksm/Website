@@ -1,0 +1,19 @@
+.navbar {
+  height: 10vh;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navText {
+  color: white;
+}
+
+.navButton {
+  color: white !important;
+  border-radius: 20px;
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
+
