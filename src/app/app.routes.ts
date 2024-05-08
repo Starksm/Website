@@ -7,5 +7,5 @@ export const routes: Routes = [
   {path: 'section2', component: Section2Component},
   // {path: 'section3', component: Section3Component},
   // {path: 'section4', component: Section4Component},
-  {path: '', redirectTo: '/section2', pathMatch: 'full'}
+  {path: '', redirectTo: '/section1', pathMatch: 'full'}
 ];

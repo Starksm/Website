@@ -1,14 +1,19 @@
 import {Component, OnInit} from '@angular/core';
 import {MatButton} from "@angular/material/button";
-import {RouterLink} from "@angular/router";
-import {ScrollService} from "../service/scroll.service";
+import {RouterLink, RouterLinkActive} from "@angular/router";
+// import {ScrollService} from "../service/scroll.service";
+import {MatToolbar} from "@angular/material/toolbar";
+import {MatTabLink} from "@angular/material/tabs";
 
 @Component({
   selector: 'app-navigationbar',
   standalone: true,
   imports: [
     MatButton,
-    RouterLink
+    RouterLink,
+    MatToolbar,
+    MatTabLink,
+    RouterLinkActive
   ],
   templateUrl: './navigationbar.component.html',
   styleUrl: './navigationbar.component.css'
@@ -16,12 +21,10 @@ import {ScrollService} from "../service/scroll.service";
 export class NavigationbarComponent implements OnInit {
   currentSection: string | undefined;
 
-  constructor(private scrollService: ScrollService) {
+  constructor() {
   }
 
   ngOnInit() {
-    this.scrollService.getCurrentSection().subscribe(section => {
-      this.currentSection = section;
-    });
+
   }
 }

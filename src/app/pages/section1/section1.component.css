@@ -2,13 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  min-height: 100vh; /* Change height to min-height */
   width: 100vw;
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
 }
 
 .matCard {
   width: 90vw;
-  height: 80vh;
+  max-height: 80vh; /* Change height to max-height */
   background-color: rgba(38, 38, 38, 0.13);
   color: white;
 }
